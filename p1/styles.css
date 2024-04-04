@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 30px;
+  background: hsl(138, 30%, 74%);
+}
+header {
+  margin: 20px auto;
+  text-align: center;
+  padding-bottom: 15px;
+  border-bottom: 8px solid hsl(250, 18%, 19%);
+}
+legend {
+  font-size: 24px;
+}
+fieldset {
+  border: none;
+}
+.part1 input {
+  display: block;
+  padding: 5px 0;
+  padding-left: 4px;
+  font-size: 1rem;
+  font-weight: 800;
+  border: 1px solid black;
+  border-radius: 6px;
+  width: 100%;
+}
+.form-group {
+  margin: 20px 20px;
+}
+
+button,
+select {
+  padding: 10px 22px;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 2px solid hsl(34, 96%, 80%);
+  background-color: hsl(34, 96%, 63%);
+}
+
+button {
+  margin: auto;
+  width: 80%;
+  text-align: center;
+}
+
+input,
+textarea {
+  background-color: hsl(138, 24%, 89%);
+}
+
+textarea {
+  font-size: 16px;
+  width: 80%;
+  border: 1px solid black;
+  border-radius: 6px;
+}

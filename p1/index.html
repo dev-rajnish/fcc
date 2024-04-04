@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <h1 id="title">Survey Form For Developer</h1>
+      <p id="description">Give your feed back to the developer</p>
+    </header>
+
+    <main>
+      <form action="https://survey-form.freecodecamp.rocks/" id="survey-form">
+        <fieldset class="part1">
+          <legend>Basic Info</legend>
+          <div class="form-group">
+            <label for="name" id="name-label">Name : </label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="jhon doe"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="name" id="email-label">Email : </label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="something@example.com"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="name" id="number-label">Age : </label>
+            <input
+              type="number"
+              id="number"
+              min="13"
+              max="90"
+              placeholder="20"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="dropdown">Gender</label>
+            <select name="gender" id="dropdown">
+              <option value="male">Male</option>
+              <option value="Female">Female</option>
+              <option value="not_specified" selected>prefer not to say</option>
+            </select>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>You are from which Field</legend>
+          <div class="form-group">
+            <input
+              type="radio"
+              name="tech-or-non-tech"
+              id="tech"
+              value="tech"
+              checked
+            />
+            <label for="tech">Tech</label>
+          </div>
+
+          <div class="form-group">
+            <input
+              type="radio"
+              name="tech-or-non-tech"
+              id="non-tech"
+              value="non-tech"
+            />
+            <label for="non-tech">Non-tech</label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>What are you here for</legend>
+          <div class="form-group">
+            <input
+              value="features"
+              type="checkbox"
+              name="reason[]"
+              id="features"
+            />
+            <label for="features">New Feature Suggestion</label>
+          </div>
+
+          <div class="form-group">
+            <input
+              value="feedback"
+              type="checkbox"
+              name="reason[]"
+              id="feedback"
+            />
+            <label for="feedback">Feedback</label>
+          </div>
+
+          <div class="form-group">
+            <label for="msgbox">Write Your Feedback or Suggestion</label>
+            <textarea
+              name="msgbox"
+              id="msgbox"
+              cols="60"
+              rows="3"
+              placeholder="The Website over all good but i would like to ..."
+            >
+            </textarea>
+          </div>
+        </fieldset>
+
+        <button type="submit" id="submit">Submit</button>
+      </form>
+    </main>
+  </body>
+</html>
